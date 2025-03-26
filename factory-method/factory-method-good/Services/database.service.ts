@@ -22,11 +22,12 @@ export class DatabaseService {
   }
 
   private configureFactory(type: databaseTypes) {
-    if (!this.databases.has(type)) {
-      this.databaseFactory = this.databases.get("postgressql")!;
-      return;
-    }
+    const factory = this.databases.get(type);
 
-    this.databaseFactory = this.databases.get(type)!;
+    if (!factory) {
+      throw new Error(`Database type '${type}' is not supported.`);
+    }
+    
+    this.databaseFactory = factory;
   }
 }
