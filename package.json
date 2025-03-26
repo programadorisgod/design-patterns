@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node  --experimental-transform-types --watch --no-warnings  builder/index.ts"
+    "builder": "node  --experimental-transform-types --watch --no-warnings  Builder-pattern/builder/index.ts",
+    "factory-bad": "node  --experimental-transform-types --watch --no-warnings  factory-method/factory-method-not-applied/index.ts",
+    "factory-good": "node  --experimental-transform-types --watch --no-warnings  factory-method/factory-method-good/index.ts"
   },
   "keywords": [],
   "author": "",

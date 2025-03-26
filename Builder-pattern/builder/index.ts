@@ -1,4 +1,4 @@
-import { userBuilder } from "../concreteBuilder.ts";
+import { userBuilder } from "./concreteBuilder.ts";
 import { User } from "./user.ts";
 import { UserNew } from "./userNew.ts";
 

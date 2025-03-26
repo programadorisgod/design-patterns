@@ -1,4 +1,4 @@
-import { UserNew } from "./builder/userNew.ts";
+import { UserNew } from "./userNew.ts";
 
 interface IBuilder {
   reset(): void;
