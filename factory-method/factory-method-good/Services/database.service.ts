@@ -11,8 +11,8 @@ export class DatabaseService {
 
   private readonly databases: Map<databaseTypes, DatabaseFactory> = new Map([
     ["mysql", new MySQLDatabaseFactory()],
-    ["postgressql", new MongoDBDatabaseFactory()],
-    ["mongodb", new PostgreSQLDatabaseFactory()],
+    ["postgressql", new PostgreSQLDatabaseFactory()],
+    ["mongodb", new MongoDBDatabaseFactory()],
   ]);
 
   public connectToDatabase(type: databaseTypes) {
